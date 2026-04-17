@@ -1,0 +1,2550 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+body {
+    background: linear-gradient(to bottom, #7ACAFF, #001B2A);
+    margin: 0;
+  }
+  
+  /* bovenste balk header */
+  .header-site {
+    box-sizing: border-box;
+    width:100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px; 
+    position: relative;
+    z-index: 99999;
+  }
+  /* logo frontpage */
+  .logo-frontpage {
+    height: 80px; 
+    width: 326px;
+    height: auto;
+    margin-left: 30px;
+  }
+  /* De box voor logo, home en contact   */
+  .brand {
+    display: flex;
+    gap: 100px; 
+    list-style: none;
+    margin: 0;
+    padding-right: 80px;
+    font-family: "chaloops", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Tekst home en contact */
+  .brand a {
+    text-decoration: none;
+    color: rgba(37, 75, 96, 1); 
+    font-weight: bold;
+    font-size: 26px;
+    display: inline-block; /* nodig voor transform */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .brand a:hover{
+    color: rgba(255, 171, 102, 1); 
+    transition: color 0.2s ease-in-out;
+    transform: scale(1.15);
+    cursor: pointer;
+  }
+
+  /* rest van de header */
+  .header {
+    height: 300px;
+    background-color: white;
+  }
+
+  .box-kronkel{
+    position: relative;
+  }
+
+  /* overgang afbeelding */
+  .kronkel {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: -5px;
+  }
+
+  /* box van de tekst en afbeelding header */
+  .inhoud-header{
+    width: 1150px;
+    height: 272px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 80px 0px;
+  }
+ 
+  /* tekst boven de header */
+  .header-tekst{
+    width: 690px;
+    font-family: "chaloops", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 37px;
+    text-align: center;
+    line-height: 55px;
+    color: #254B60;
+  }
+
+  .box1{
+    position: relative;
+    margin-bottom: 200px;
+  }
+
+
+
+
+
+
+  /* Style for the section */
+  section {
+    padding: 40px 20px;
+    color: #254B60;
+  }
+/* tekst van de titels box 1 t/m 4 */
+  section h2 {
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+  }
+
+  .galerij{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+  }
+
+  .foto-workshop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .kind{
+    border-radius: 50px;
+  }
+
+  .workshopstitle{
+    margin-bottom: 0px;
+  }
+
+  .titel-watdoel{
+    position: relative;
+  }
+
+  .h2-box1-1{
+    margin-top: 50px;
+  }
+
+  .h2-box1-2{
+    margin-top: 150px;
+  }
+/* tekst in de boxen */
+  .box-text {
+    font-family: "ivysoft-variable", sans-serif;
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 50px auto;
+    max-width: 800px;
+    /* text-align: center; */
+    color: white;
+  }
+
+/* grote boxen */
+  .box-content{
+    position: relative;
+    width: 900px;
+    margin: 50px 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+/* grote box video */
+  .box-video{
+    position: relative;
+    width: 900px;
+    height: 100%;
+    background-color: #FFAB66;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 20px 50px;
+    margin-top: 100px;
+  }
+  video{
+    width: 800px;
+    height: 100%;
+    border-radius: 30px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .videotitel{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .info-video{
+    font-family: "ivysoft-variable", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
+/* Titel boven de afbeelding */
+.workshop-item {
+  text-align: center;
+  width: 250px; 
+  text-decoration: none;
+  font-size: 20px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+}
+
+.workshop-title {
+  text-decoration: none;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  font-family: "chaloops", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color:  white
+}
+
+.box-content-workshop a{
+  text-decoration: none;
+  color: white;
+  font-family: "chaloops", sans-serif;
+}
+
+.small-image {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-image:hover {
+  transform: scale(1.10);
+}
+
+
+/* Titel-links van workshops */
+.box-titel-workshop {
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Afbeeldingen en titels van de workshops */
+.box-content-workshop {
+  position: relative;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+  margin: 0 auto;
+  margin-bottom: 270px;
+}
+
+.box-content-workshop2 {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+h3{
+  font-family: "chaloops", sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.info-text{
+  font-family: "ivysoft-variable", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Info-tekst onder de afbeeldingen */
+.box-info {
+  width: 950px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+  margin: 0 auto;
+  font-family: "ivysoft-variable", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+}
+
+.button-container{
+  width: 232px;
+  height: 45px;
+  background-color: #D9D9D9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+.button-container:hover {
+  background-color: #FFAB66;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button {
+  color: #254B60;
+  font-weight: bold;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "ivysoft-variable", sans-serif;
+}
+
+.nieuwsbrief{
+  font-family: "chaloops", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+input{
+  position: relative;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  left: -35px;
+}
+
+/* Afbeelding styling */
+.custom-footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.kronkel-footer {
+  width: 100%;
+  display: block;
+}
+
+.footer-columns {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  color: #254B60;
+}
+
+.footer-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-column img.small-image {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  top: -20;
+}
+
+.footer-column img.small-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 171, 102, 1);
+}
+
+.social-media-links {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.rest-informatie{
+  font-family: "ivysoft-variable", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #254B60;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #254B60;
+}
+
+.rest-informatie li{
+  margin-bottom: 20px;
+}
+
+.footer-column-sterren{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.small-image-footer1{
+  align-items: left;
+  margin-left: 20px;
+  width: 40%;
+}
+
+.small-image-footer2{
+  align-items: left;
+  margin-left: 180px;
+  width: 25%;
+}
+
+.figuurtjes{
+  max-width: 1350px;
+  position: absolute;
+  margin: 0 auto;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.zeewier{
+  position: absolute;
+  bottom: 5px;
+  left: 1250px;
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(5deg); /* optioneel, voor een speelse draai */
+}
+
+.krab-contact{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-5deg); /* optioneel, voor een speelse draai */
+}
+
+.bord{
+  position: absolute;
+  bottom: -10px;
+  left: 5px;
+  width: 200px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.bubbles{
+  position: absolute;
+  top: calc(950px + 25vh); /* dit randomiseer je met JS */
+  left: calc(100px ); /* idem */
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+.bubbles2{
+  position: absolute;
+  top: calc(2450px + 25vh); /* dit randomiseer je met JS */
+  left: calc(30px ); /* idem */
+  width: 125px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.bubbles3{
+  position: absolute;
+  right: -120px;
+  width: 125px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  transform: scaleX(-1); /* optioneel, voor een speelse draai */
+}
+
+.bubbles4{
+  position: absolute;
+  left: -150px;
+  top: 150px;
+  width: 125px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+
+
+.rog{
+  position: absolute;
+  top: 600px;
+  left: -150px;
+  width: 250px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-35deg);
+}
+
+.kreeft{
+  position: absolute;
+  right: -70px;
+  top: -50px;
+  width: 200px;
+  height: auto;
+  z-index: 9999; 
+  pointer-events: none; 
+}
+
+.vis{
+  position: absolute;
+  left: 150px;
+  width: 150px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(10deg); /* optioneel, voor een speelse draai */
+}
+
+.inktvis{
+  position: absolute;
+  top: calc(420px);
+  left: calc(50px); 
+  width: 150px;
+  height: auto;
+  z-index: 9999; 
+  pointer-events: none; 
+  transform: rotate(35deg); 
+}
+
+.garnaal{
+  position: absolute;
+  top: calc(80px + 15vh); /* dit randomiseer je met JS */
+  left: calc(1170px); /* idem */
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+}
+
+.schatkist-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.schatkist{
+  position: relative;
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  pointer-events: none; 
+  bottom: -40px;
+  left: -50px;
+
+}
+
+.info-nieuwsbrief{
+  margin: 100px auto;
+  font-family: "chaloops", sans-serif;
+}
+
+
+.form-content {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.form-content p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.form-content input[type="email"] {
+  width: 375px;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 120px;
+}
+
+.form-content button {
+  padding: 0.6rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.verstuur{
+  width: 20px;
+  top: -10px;
+}
+
+
+
+
+/* pagina 2 WORKSHOP */
+
+.header2 {
+  position: relative;
+  height: 525px;
+  background-color: white;
+}
+
+.title-pagina2{
+  font-family: "chaloops", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  text-align: center;
+  color: #254B60;
+}
+
+.header-tekst-pagina2{
+  font-family: "ivysoft-variable", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 37px;
+  text-align: center;
+  line-height: 55px;
+  color: #254B60;
+  width: 730px;
+}
+
+.inhoud-header-pagina2{
+width: 1150px;
+height: 272px;
+margin: 0px auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 80px 0px 120px 0px;
+}
+
+.titel-inhoud{
+  position: relative;
+}
+
+.knopjes-header{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.button-header{
+  font-family: "chaloops", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 300px;
+  height: 45px;
+  border-radius: 50px;
+  color: #254B60;
+}
+
+.titel-workshop-pagina2{
+  position: relative;
+  margin-top: 80px;
+}
+
+.beginmiddeneind{
+  font-family: "chaloops", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-top: 1px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.box-text2{
+  font-family: "ivysoft-variable", sans-serif;
+  width: 370px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+}
+
+.button-download{
+  font-family: "ivysoft-variable", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 345px;
+  height: 70px;
+  background-color: #D9D9D9;
+  border-radius: 50px;
+  color: #254B60;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.button-download:hover {
+  background-color: #FFAB66;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scale(1.05 );
+}
+
+.tekst-download{
+  font-family: "ivysoft-variable", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.andere-workshops{
+  font-family: "chaloops", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  text-align: center;
+  color: white;
+}
+
+.social-img1{
+  width: 60px;
+  height: auto;
+}
+.social-img2{
+  width: 40px;
+  height: auto;
+}
+.social-img3{
+  width: 60px;
+  height: auto;
+}
+
+
+
+/* pagina 2 WORKSHOP */
+
+
+.garnaal2 {
+  position: absolute;
+  right: 50px;
+  width: 120px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+}
+
+.kreeft2{
+  position: absolute;
+  left: 200px; 
+  top: -50px;
+  width: 110px;
+  height: auto;
+  z-index: 9999; 
+  pointer-events: none; 
+  transform: scaleX(-1);
+}
+
+.bubbles2{
+  position: absolute;
+  top: calc(710px + 25vh); /* dit randomiseer je met JS */
+  left: calc(280px); /* idem */
+  width: 50px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.inktvis2{
+  position: absolute;
+  top: 250px;
+  left: 1000px;
+  width: 250px;
+  height: auto;
+  z-index: 9999;
+  pointer-events: none; 
+  transform: rotate(35deg);
+}
+
+.bubbles22{
+  position: absolute;
+  top: -140px;
+  left: 260px;
+  width: 80px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.bubbles62{
+  position: absolute;
+  top: 8cqb;
+  left: 50px;
+  width: 80px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(15deg);
+}
+
+.rog2{
+  position: absolute;
+  top: calc(100px + 25vh); /* dit randomiseer je met JS */
+  left: calc(1px); /* idem */
+  width: 215px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-35deg);
+}
+
+.bord22{
+  position: absolute;
+  top: calc(265px + 25vh); /* dit randomiseer je met JS */
+  left: calc(125px); /* idem */
+  width: 250px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.bubbles32{
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  width: 150px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-90deg); /* optioneel, voor een speelse draai */
+}
+
+.vis2{
+  position: absolute;
+  top: 100px;
+  right: -150px;
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(10deg); /* optioneel, voor een speelse draai */
+}
+
+.bubbles42{
+  position: absolute;
+  top: -60px;
+  right: -120px;
+  width: 50px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  transform: scaleX(-1);
+}
+
+.vis3{
+  position: absolute;
+  top: 300px;
+  left: 10px;
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(10deg); /* optioneel, voor een speelse draai */
+  transform: scaleX(-1);
+}
+
+.zeewier2{
+  position: absolute;
+  bottom: calc(3610px + 25vh); /* dit randomiseer je met JS */
+  left: calc(50px + 20vw); /* idem */
+  width: 150px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(5deg); /* optioneel, voor een speelse draai */
+}
+
+.krab-contact2{
+  position: absolute;
+  top: calc(4330px + 25vh); /* dit randomiseer je met JS */
+  left: calc(5px); /* idem */
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-5deg); /* optioneel, voor een speelse draai */
+}
+
+.bord2{
+  position: absolute;
+  top: calc(4300px + 25vh); /* dit randomiseer je met JS */
+  left: calc(3px); /* idem */
+  width: 120px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+}
+
+.bubbles52{
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  height: auto;
+  z-index: 9999; /* zorgt dat het bovenop ligt */
+  pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+  body {
+    width: 100%;
+  }
+  .header-tekst{
+    font-size: 32px;
+  }
+
+  .laptop-strand{
+   padding-top: 100px;
+  }
+  /* rest van de header */
+  .header {
+    height: 425px;
+  }
+  /* box van de tekst en afbeelding header */
+  .inhoud-header{
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 30px;
+  }
+ 
+  /* tekst boven de header */
+  .header-tekst{
+    width: 480px;
+    padding-top: 50px;
+    height: 200px;
+  }
+
+  .garnaal{
+    left: 900px;
+  }
+
+  .inktvis{
+    top: 550px;
+    width: 150px;
+  }
+
+  .vis{
+    left: 20px;
+  }
+
+  .bubbles{
+    top: 1150px;
+    left: 20px;
+  }
+
+  .box-image{
+    width: 350px;
+    height: 100%;
+  }
+
+  .kind{
+    border-radius: 50px;
+    width: 350px;
+  }
+
+  .box-video{
+    max-width: 800px;
+  }
+  .video{
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .kreeft{
+    right: -40px;
+    top: -50px;
+  }
+  .bubbles3{
+    right: 330px;
+    top: 180px;
+    width: 125px;
+    rotate: -80deg;
+  }
+
+  .krab-contact{
+    width: 100px;
+    left: 5px;
+  }
+
+  .bord{
+    left: 0px;
+    width: 120px;
+    bottom: 0px;
+  }
+
+  .rog{
+    left: -100px;
+  }
+  .bubbles4{
+    left: -100px;
+  }
+
+  input{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    left: -35px;
+    margin-top: 100px;
+  }
+
+  
+
+
+
+
+
+
+  .inhoud-header-pagina2{
+    width: 950px;
+    height: 272px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px 120px 0px;
+    }
+
+    .header-tekst-pagina2{
+      width: 630px;
+    }
+
+    .box-content-workshop2 {
+      width: 400px ;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 100px;
+    }
+
+    .inktvis2{
+      top: 250px;
+      left: 700px;
+    }
+    .bubbles32{
+      top: 150px;
+      left: 400px;
+      rotate: 15deg;
+    }
+
+    .box-content{
+      width: 800px;
+    }
+    .vis2{
+      top: 100px;
+      right: -50px;
+    }
+    .vis3{
+      top: 300px;
+      left: 10px;
+    }
+
+    .bubbles42{
+      top: -60px;
+      right: 0px;
+    }
+    .bubbles62{
+      top: 8cqb;
+      left: 40px;
+    }
+    .krab-contact2{
+      position: absolute;
+      top: calc(4520px + 25vh); /* dit randomiseer je met JS */
+      left: calc(5px); /* idem */
+    }
+    .bord2{
+      position: absolute;
+      top: calc(4490px + 25vh); /* dit randomiseer je met JS */
+      left: calc(5px); /* idem */
+    }
+    .rog2{
+      position: absolute;
+      top: calc(50px + 25vh); /* dit randomiseer je met JS */
+      left: calc(1px); /* idem */
+    }
+    .bord22{
+      top: calc(215px + 25vh); /* dit randomiseer je met JS */
+      left: calc(125px); /* idem */
+    }
+    .bubbles52{
+      top: -100px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+  
+  
+  
+  
+  
+  
+  
+  body {
+      background: linear-gradient(to bottom, #7ACAFF, #001B2A);
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    
+    /* bovenste balk header */
+    .header-site {
+      box-sizing: border-box;
+      width:100%;
+      background: white;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      padding: 20px 0px; 
+      position: relative;
+      z-index: 99999;
+    }
+    /* logo frontpage */
+    .logo-frontpage {
+      width: 126px;
+      height: auto;
+      margin-left: 0px;
+      padding-right: 80px;
+    }
+    /* De box voor logo, home en contact   */
+    .brand {
+      display: flex;
+      gap: 100px; 
+      list-style: none;
+      margin: 0;
+      padding-right: 40px;
+      font-family: "chaloops", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      gap: 20px;
+    }
+    
+    /* Tekst home en contact */
+    .brand a {
+      text-decoration: none;
+      color: rgba(37, 75, 96, 1); 
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block; /* nodig voor transform */
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+  
+    .brand a:hover{
+      color: rgba(255, 171, 102, 1); 
+      transition: color 0.2s ease-in-out;
+      transform: scale(1.15);
+      cursor: pointer;
+    }
+  
+    /* rest van de header */
+    .header {
+      height: 700px;
+      background-color: white;
+    }
+    .laptop-strand{
+      transform: scale(0.7);
+     }
+  
+    .box-kronkel{
+      position: relative;
+    }
+  
+    /* overgang afbeelding */
+    .kronkel {
+      width: 100%;
+      display: block;
+      position: relative;
+      top: -5px;
+    }
+  
+    /* box van de tekst en afbeelding header */
+    .inhoud-header {
+      width: 1150px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 80px;
+      gap: 20px; /* optioneel, voor ruimte tussen tekst en afbeeldingen */
+    }
+    
+   
+    /* tekst boven de header */
+    .header-tekst{
+      width: 350px;
+      font-family: "chaloops", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      text-align: center;
+      line-height: 35px;
+      color: #254B60;
+      margin: 0 auto;
+      padding-top: 5px;
+    }
+  
+    .box1{
+      position: relative;
+      margin-bottom: 200px;
+    }
+  
+  
+  
+  
+  
+  
+    /* Style for the section */
+    section {
+      padding: 40px 20px;
+      color: #254B60;
+    }
+  /* tekst van de titels box 1 t/m 4 */
+    section h2 {
+      font-family: "chaloops", sans-serif;
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 80px;
+      margin-top: 200px;
+      text-align: center;
+      color: white;
+    }
+  
+    .workshopstitle{
+      margin-bottom: 0px;
+    }
+  
+    .titel-watdoel{
+      position: relative;
+    }
+  
+    .h2-box1-1{
+      margin-top: 50px;
+    }
+  
+    .h2-box1-2{
+      margin-top: 150px;
+    }
+  /* tekst in de boxen */
+    .box-text {
+      font-family: "ivysoft-variable", sans-serif;
+      width: 310px;
+      font-size: 16px;
+      line-height: 1.4;
+      margin: 30px auto;
+      /* text-align: center; */
+      color: white;
+    }
+  
+  /* grote boxen */
+  .box-content {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* optioneel voor nette centrering tekst */
+    gap: 30px; /* ruimte tussen afbeelding en tekst */
+  }
+  /* Alleen voor de tweede box */
+.box:nth-of-type(2) .box-image {
+  order: -1; /* afbeelding eerst tonen */
+}
+
+
+  .box-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transform: scale(0.8);
+  }
+
+  .kind{
+    border-radius: 50px;
+    width: 250px;
+  }
+  
+  
+  
+  /* grote box video */
+  .box-video {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color: #FFAB66;
+    margin: 100px auto 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .videotitel {
+    font-family: "chaloops", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+  }
+  
+  /* optioneel: afbeeldingen binnen de box-video schalen */
+  .box-video img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+
+
+  /* Titel boven de afbeelding */
+  .box-content-workshop2 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+  }
+
+  .workshop-item {
+    width: 90%;
+  }
+
+  .workshop-title {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .info-text {
+    font-size: 15px;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .button-container {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+
+
+
+
+
+
+
+  
+  .nieuwsbrief{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  input{
+    position: relative;
+    width: 100px !important;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 30px !important;
+    left: 0px;
+  }
+  
+  /* Afbeelding styling */
+  .custom-footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 80px;
+  }
+  
+  .kronkel-footer {
+    width: 100%;
+    display: block;
+  }
+  
+  .footer-columns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #254B60;
+    height: 50px;
+  }
+  
+  .footer-column {
+    width: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-column img.small-image {
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    top: -20;
+  }
+  
+  .footer-column img.small-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 171, 102, 1);
+  }
+  
+  .social-media-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  
+  .rest-informatie{
+    font-family: "ivysoft-variable", sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #254B60;
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #254B60;
+    font-size: 6px;
+    line-height: 1px;
+    width: 110px;
+  }
+  
+  .rest-informatie li{
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  .social-img1{
+    width: 15px;
+    height: auto;
+  }
+  .social-img2{
+    width: 15px;
+    height: auto;
+  }
+  .social-img3{
+    width: 15px;
+    height: auto;
+  }
+  
+  .footer-column-sterren{
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .small-image-footer1{
+    align-items: left;
+    margin-left: 20px;
+    width: 30px;
+  }
+  
+  .small-image-footer2{
+    align-items: left;
+    margin-left: 40px;
+    width: 50px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .figuurtjes{
+    max-width: 1350px;
+    position: absolute;
+    margin: 0 auto;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .zeewier{
+    position: absolute;
+    bottom: 5px;
+    width: 30px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .krab-contact{
+    position: absolute;
+    top: 35px;
+    left: 230px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .bord{
+    position: absolute;
+    top: 20px;
+    left: 225px;
+    width: 60px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles{
+    position: absolute;
+    top: calc(1550px + 25vh); /* dit randomiseer je met JS */
+    left: calc(130px ); /* idem */
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    rotate: -10deg; /* optioneel, voor een speelse draai */
+  }
+  .bubbles2{
+    position: absolute;
+    top: calc(2450px + 25vh); /* dit randomiseer je met JS */
+    left: calc(30px ); /* idem */
+    width: 125px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles3{
+    position: absolute;
+    top: 570px;
+    right: 170px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1); /* optioneel, voor een speelse draai */
+  }
+  
+  .bubbles4{
+    position: absolute;
+    left: 100px;
+    top: 400px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    rotate: -40deg; /* optioneel, voor een speelse draai */
+  }
+  
+  
+  
+  .rog{
+    position: absolute;
+    top: 450px;
+    left: 150px;
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-35deg);
+  }
+  
+  .kreeft{
+    position: absolute;
+    right: 50px;
+    top: -50px;
+    width: 80px;
+    height: auto;
+    z-index: 9999; 
+    pointer-events: none; 
+  }
+  
+  .vis{
+    position: absolute;
+    left: 200px;
+    top: 1850px;
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .inktvis{
+    position: absolute;
+    top: calc(720px);
+    left: calc(20px); 
+    width: 100px;
+    height: auto;
+    z-index: 9999; 
+    pointer-events: none; 
+    transform: rotate(35deg); 
+  }
+  
+  .garnaal{
+    position: absolute;
+    top: calc(350px + 15vh); /* dit randomiseer je met JS */
+    left: calc(280px); /* idem */
+    width: 80px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .schatkist-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .schatkist{
+    position: relative;
+    display: block;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    pointer-events: none; 
+    bottom: -40px;
+    transform: scale(0.6);
+    left: 0px;
+
+  }
+  
+  .info-nieuwsbrief{
+    margin: 130px auto 0 auto;
+    font-size: 15px;
+    width: 150px;
+  }
+  
+  
+  .form-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;  /* zorgt ervoor dat de items onder elkaar staan */
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .form-content p {
+    font-size: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .form-content input[type="email"] {
+    width: 375px;
+    padding: 0.6rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 120px;
+  }
+  
+  .form-content button {
+    padding: 0.6rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .verstuur{
+    width: 15px;
+    margin-left: 10px;
+  }
+  
+  
+  
+  
+  /* pagina 2 WORKSHOP */
+  
+  .header2 {
+    position: relative;
+    height: 525px;
+    background-color: white;
+  }
+  
+  .title-pagina2{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    text-align: center;
+    color: #254B60;
+  }
+  
+  .header-tekst-pagina2{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 37px;
+    text-align: center;
+    line-height: 55px;
+    color: #254B60;
+    width: 730px;
+  }
+  
+  .inhoud-header {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 390px;              
+    margin: 0 auto;
+    height: 272px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px 120px 0px;
+  }
+  
+  .titel-inhoud{
+    position: relative;
+  }
+  
+  .knopjes-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+  
+  .button-header{
+    font-family: "chaloops", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    color: #254B60;
+  }
+  
+  .titel-workshop-pagina2{
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .beginmiddeneind{
+    font-family: "chaloops", sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .box-text2{
+    font-family: "ivysoft-variable", sans-serif;
+    width: 370px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+  }
+  
+  .button-download{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 345px;
+    height: 70px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    color: #254B60;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  
+  .button-download:hover {
+    background-color: #FFAB66;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.05 );
+  }
+  
+  .tekst-download{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  .andere-workshops{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  
+  /* pagina 2 WORKSHOP  JAVAAAAAA*/ 
+  
+  
+  .garnaal2 {
+    position: absolute;
+    right: 50px;
+    width: 120px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .kreeft2{
+    position: absolute;
+    left: 200px; 
+    top: -50px;
+    width: 110px;
+    height: auto;
+    z-index: 9999; 
+    pointer-events: none; 
+    transform: scaleX(-1);
+  }
+  
+  .bubbles2{
+    position: absolute;
+    top: calc(710px + 25vh); /* dit randomiseer je met JS */
+    left: calc(280px); /* idem */
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .inktvis2{
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+    width: 250px;
+    height: auto;
+    z-index: 9999;
+    pointer-events: none; 
+    transform: rotate(35deg);
+  }
+  
+  .bubbles22{
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    width: 80px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    display: none;
+  }
+  
+  .bubbles62{
+    position: absolute;
+    top: 8cqb;
+    left: -100px;
+    width: 80px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(15deg);
+  }
+  
+  .rog2{
+    position: absolute;
+    top: calc(100px + 25vh); /* dit randomiseer je met JS */
+    left: calc(1px); /* idem */
+    width: 215px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-35deg);
+  }
+  .rog2{
+    position: absolute;
+    top: calc(350px + 25vh); /* dit randomiseer je met JS */
+    left: calc(1px); /* idem */
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-35deg);
+  }
+  
+  .bord22{
+    position: absolute;
+    top: calc(265px + 25vh); /* dit randomiseer je met JS */
+    left: calc(125px); /* idem */
+    width: 250px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles32{
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-90deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .vis2{
+    position: absolute;
+    top: 100px;
+    right: -150px;
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .bubbles42{
+    position: absolute;
+    top: -60px;
+    right: -120px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+  }
+  
+  .vis3{
+    position: absolute;
+    top: 300px;
+    left: -50px;
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+  }
+  
+  .zeewier2{
+    position: absolute;
+    bottom: calc(3610px + 25vh); /* dit randomiseer je met JS */
+    left: calc(50px + 20vw); /* idem */
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .krab-contact2{
+    position: absolute;
+    top: calc(3680px + 25vh); /* dit randomiseer je met JS */
+    left: calc(50px + 20vw); /* idem */
+    width: 200px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .bord2{
+    position: absolute;
+    top: calc(3580px + 25vh); /* dit randomiseer je met JS */
+    left: calc(680px + 20vw); /* idem */
+    width: 350px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles52{
+    position: absolute;
+    top: 0px;
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+  }
+
+  .headerfoto2{
+    padding-top: 40px;
+  }
+  
+  
+
+  .header2 {
+    position: relative;
+    height: 725px;
+    background-color: white;
+  }
+  
+  .title-pagina2{
+    font-family: "chaloops", sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #254B60;
+  }
+  
+  .header-tekst-pagina2{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    line-height: 25px;
+    color: #254B60;
+    width: 300px;
+  }
+  
+  .inhoud-header-pagina2{
+  width: 350px;
+  height: 272px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px 120px 0px;
+  }
+  
+  .titel-inhoud{
+    position: relative;
+  }
+  
+  .knopjes-header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  
+
+  
+  .titel-workshop-pagina2{
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  .beginmiddeneind{
+    font-family: "chaloops", sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .box1{
+    margin-bottom: 20px;
+  }
+  
+  .box-text2{
+    font-family: "ivysoft-variable", sans-serif;
+    width: 320px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  .button-download{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 345px;
+    height: 70px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    color: #254B60;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 150px;
+  }
+  
+  .button-download:hover {
+    background-color: #FFAB66;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.05 );
+  }
+  
+  .tekst-download{
+    font-family: "ivysoft-variable", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+  }
+  
+  .andere-workshops{
+    font-family: "chaloops", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  
+  /* pagina 2 WORKSHOP */
+  
+  
+  .garnaal2 {
+    position: absolute;
+    top: 300px;
+    right: 50px;
+    width: 60px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .kreeft2{
+    position: absolute;
+    left: 200px; 
+    top: -45px;
+    width: 110px;
+    height: auto;
+    z-index: 9999; 
+    pointer-events: none; 
+    transform: scaleX(-1);
+  }
+  
+  .bubbles2{
+    position: absolute;
+    top: calc(710px + 25vh); /* dit randomiseer je met JS */
+    left: calc(280px); /* idem */
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .inktvis2{
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 100px;
+    height: auto;
+    z-index: 9999;
+    pointer-events:none; 
+    transform: rotate(35deg);
+    display: none;
+  }
+  
+  .bubbles22{
+    position: absolute;
+    top: -140px;
+    left: 260px;
+    width: 80px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles62{
+    position: absolute;
+    top: 8cqb;
+    left: -100px;
+    width: 80px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(15deg);
+  }
+  
+
+  
+  .bord22{
+    position: absolute;
+    top: calc(425px + 25vh); /* dit randomiseer je met JS */
+    left: calc(60px); /* idem */
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles32{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-90deg); /* optioneel, voor een speelse draai */
+    display: none;
+  }
+  
+  .vis2{
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(10deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .bubbles42{
+    position: absolute;
+    top: -60px;
+    right: 120px;
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+    display: none;
+  }
+  
+  .vis3{
+    position: absolute;
+    top: 300px;
+    left: -150px;
+    width: 100px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(10deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+  }
+  
+  .zeewier2{
+    position: absolute;
+    bottom: calc(3610px + 25vh); /* dit randomiseer je met JS */
+    left: calc(50px + 20vw); /* idem */
+    width: 150px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .krab-contact2{
+    position: absolute;
+    top: calc(4700px + 25vh); /* dit randomiseer je met JS */
+    left: calc(180px + 20vw); /* idem */
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(-5deg); /* optioneel, voor een speelse draai */
+  }
+  
+  .bord2{
+    position: absolute;
+    top: calc(4690px + 25vh); /* dit randomiseer je met JS */
+    left: calc(180px + 20vw); /* idem */
+    width: 50px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+  }
+  
+  .bubbles52{
+    position: absolute;
+    top: 500px;
+    width: 30px;
+    height: auto;
+    z-index: 9999; /* zorgt dat het bovenop ligt */
+    pointer-events: none; /* klikbare dingen eronder blijven bereikbaar */
+    transform: rotate(20deg); /* optioneel, voor een speelse draai */
+    transform: scaleX(-1);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+}
+
